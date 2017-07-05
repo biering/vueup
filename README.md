@@ -1,6 +1,6 @@
 # Vue Popup
 
-![vue-popup-logo](./media/vue-popup-logo.png)
+![vue-popup](./media/vue-popup-logo1.png)
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/made-with-vue.svg)](http://forthebadge.com)
