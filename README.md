@@ -1,5 +1,7 @@
 # Vue Popup
 
+[![forthebadge](http://forthebadge.com/images/badges/fuck-it-ship-it.svg)](http://forthebadge.com)
+
 > Simple, lightweight and elegant global notification popup for Vue.js
 
 ## Install
@@ -10,6 +12,7 @@ npm install --save vue-popup
 
 ```javascript
 import Vue from 'vue'
+// somewhere
 import VuePopup from 'vue-popup'
 
 Vue.use(VuePopup)
@@ -57,11 +60,20 @@ this.$popup({
 })
 ```
 
-### Object parameter
+### Attributes
 
 |Name|type|default|description|
 |:--:|:--:|:--:|:---|
 |message|string|-|The message that will be displayed in the notification|
 |color|string|#ffffff|The text color of the message|
 |backgroundColor|string|rgba(0, 0, 0, 0.8)|The background color of the notification|
-|delay|float|3.5|How long (in seconds, e.q. 3.5 seconds) should the notification popup be displayed?|
+|delay|float|3.5|How long (in seconds, e.q. 3.5 seconds) should the notification popup be displayed|
+
+## Changelog
+
+* `v0.0.1`
+  * initial version
+
+## License
+
+Copyright (c) 2017 Christoph Biering, Licensed under the MIT license.
