@@ -1,6 +1,6 @@
 # Vue Popup
 
-> Simple and elegant global notification popup for Vue.js
+> Simple, lightweight and elegant global notification popup for Vue.js
 
 ## Installation
 
@@ -17,7 +17,7 @@ Vue.use(VuePopup)
 
 ## Usage
 
-On one point in your app:
+Add the `<notification-popup>` template to one point in your application:
 
 ```html
 <template>
@@ -27,7 +27,7 @@ On one point in your app:
 </template>
 ```
 
-In your Vue component:
+To trigger the notification use the `$popup` method:
 
 ```javascript
 export default {
@@ -38,4 +38,10 @@ export default {
     }
   }
 }
+```
+
+## API
+
+```
+this.$popup(String | Object)
 ```
