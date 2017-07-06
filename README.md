@@ -1,4 +1,4 @@
-# Vue Popup
+# Vue Notification Popup
 
 
 Simple, lightweight and elegant global notification popup for Vue.js.
@@ -19,16 +19,16 @@ View the [demo](./demo/index.html).
 ## Install
 
 ```
-npm install --save vue-popup
+npm install --save vue-notification-popup
 ```
 
 Somewhere in your app:
 
 ```javascript
 import Vue from 'vue'
-import VuePopup from 'vue-popup'
+import VueNotificationPopup from 'vue-notification-popup'
 
-Vue.use(VuePopup)
+Vue.use(VueNotificationPopup)
 ```
 
 ## Usage
