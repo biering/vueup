@@ -7,7 +7,7 @@
 
 Simple, lightweight and elegant global notification popup for Vue.js.
 
-View the (./demo/index.html)[demo].
+View the [demo](./demo/index.html).
 
 
 ---
