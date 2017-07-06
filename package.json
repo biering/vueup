@@ -1,6 +1,6 @@
 {
-  "name": "vue-popup",
-  "description": "Simple and elegant global notification popup for Vue.js",
+  "name": "vue-notification-popup",
+  "description": "Simple, lightweight and elegant global notification popup for Vue.js",
   "version": "0.0.1",
   "author": "Christoph Biering <chryb.q@gmail.com> (https://github.com/chryb)",
   "private": false,
