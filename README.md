@@ -4,7 +4,7 @@
 [![forthebadge](http://forthebadge.com/images/badges/made-with-vue.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
 
-![vue-popup](./media/vue-popup-logo.png)
+<div style="text-align:center;">![vue-popup](./media/vue-popup-logo.png)</div>
 
 > Simple, lightweight and elegant global notification popup for Vue.js
 
