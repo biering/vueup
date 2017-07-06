@@ -1,9 +1,9 @@
-# Vue Notification Popup
+# VueUp
 
 
 Simple, lightweight and elegant global notification popup for Vue.js.
 
-View the [demo](./demo/index.html).
+View the [demo](http://chryb.me/vueup).
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/made-with-vue.svg)](http://forthebadge.com)
@@ -11,34 +11,29 @@ View the [demo](./demo/index.html).
 
 ---
 
-
-
-
-
-
 ## Install
 
 ```
-npm install --save vue-notification-popup
+npm install --save vueup
 ```
 
 Somewhere in your app:
 
 ```javascript
-import Vue from 'vue'
-import VueNotificationPopup from 'vue-notification-popup'
+import Vue   from 'vue'
+import VueUp from 'vueup'
 
-Vue.use(VueNotificationPopup)
+Vue.use(VueUp)
 ```
 
 ## Usage
 
-Add the `<notification-popup>` component to one point in your application:
+Add the `<vue-up>` component to one point in your application:
 
 ```html
 <template>
   <div>
-    <notification-popup></notification-popup>
+    <vue-up></vue-up>
   </div>
 </template>
 ```

@@ -1,7 +1,7 @@
-import NotificationPopup  from './NotificationPopup.vue'
-import { events }         from './events'
+import VueUp      from './VueUp.vue'
+import { events } from './events'
 
-const Popup = {
+const NotificationPopup = {
   install(Vue) {
     if (this.installed) {
       return
@@ -9,7 +9,7 @@ const Popup = {
 
     this.installed = true
 
-    Vue.component('notification-popup', NotificationPopup)
+    Vue.component('vue-up', VueUp)
     Vue.prototype.$popup = (params) => {
       if (typeof params === 'string') {
         params = { message: params }
@@ -22,4 +22,4 @@ const Popup = {
   }
 }
 
-export default Popup
+export default NotificationPopup

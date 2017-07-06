@@ -1,5 +1,5 @@
 <template>
-  <div class="notification-popup" :class="{ '--show': show }" :style="{ backgroundColor: backgroundColor }">
+  <div class="vue-up" :class="{ '--show': show }" :style="{ backgroundColor: backgroundColor }">
     <div class="message" :style="{ color: color }">
       {{ message }}
     </div>
@@ -11,7 +11,7 @@
   import { events } from './events'
 
   export default {
-    name: 'notification-popup',
+    name: 'vue-up',
 
     data () {
       return {
@@ -52,7 +52,7 @@
 <style lang="css" scoped>
   @import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
 
-  .notification-popup {
+  .vue-up {
     position: fixed;
     left: 0;
     top: 0;
@@ -62,16 +62,16 @@
     pointer-events: none;
   }
 
-  .notification-popup.--show {
+  .vue-up.--show {
     opacity: 1;
   }
 
-  .notification-popup:not(.--show) {
+  .vue-up:not(.--show) {
     opacity: 0;
     transition: opacity .4s;
   }
 
-  .notification-popup .message {
+  .vue-up .message {
     color: #fff;
     font-family: 'Rubik', sans-serif;
     font-size: 60px;

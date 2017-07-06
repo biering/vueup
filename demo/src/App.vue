@@ -1,8 +1,8 @@
 <template>
   <main class="main">
-    <h1>Vue-Popup</h1>
+    <h1>VueUp</h1>
     <p>Simple and elegant global notification popup for Vue.js</p>
-    <notification-popup></notification-popup>
+    <vue-up></vue-up>
 
     <h2>Test some notifications</h2>
 

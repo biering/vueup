@@ -101,7 +101,7 @@ var Component = __webpack_require__(6)(
   /* template */
   __webpack_require__(7),
   /* scopeId */
-  "data-v-7c8666e6",
+  "data-v-1fe7f8ac",
   /* cssModules */
   null
 )
@@ -121,7 +121,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'notification-popup',
+  name: 'vue-up',
 
   data: function data() {
     return {
@@ -162,15 +162,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__NotificationPopup_vue__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__NotificationPopup_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__NotificationPopup_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__VueUp_vue__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__VueUp_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__VueUp_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__events__ = __webpack_require__(0);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 
 
 
-var Popup = {
+var NotificationPopup = {
   install: function install(Vue) {
     if (this.installed) {
       return;
@@ -178,7 +178,7 @@ var Popup = {
 
     this.installed = true;
 
-    Vue.component('notification-popup', __WEBPACK_IMPORTED_MODULE_0__NotificationPopup_vue___default.a);
+    Vue.component('vue-up', __WEBPACK_IMPORTED_MODULE_0__VueUp_vue___default.a);
     Vue.prototype.$popup = function (params) {
       if (typeof params === 'string') {
         params = { message: params };
@@ -191,7 +191,7 @@ var Popup = {
   }
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Popup);
+/* harmony default export */ __webpack_exports__["default"] = (NotificationPopup);
 
 /***/ }),
 /* 4 */
@@ -202,7 +202,7 @@ exports = module.exports = __webpack_require__(5)();
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700);", ""]);
 
 // module
-exports.push([module.i, ".notification-popup[data-v-7c8666e6]{position:fixed;left:0;top:0;width:100%;height:100vh;z-index:1000000000;pointer-events:none}.notification-popup.\\--show[data-v-7c8666e6]{opacity:1}.notification-popup[data-v-7c8666e6]:not(.\\--show){opacity:0;transition:opacity .4s}.notification-popup .message[data-v-7c8666e6]{color:#fff;font-family:Rubik,sans-serif;font-size:60px;position:absolute;text-align:center;top:50%;transform:translateY(-50%);left:0;right:0;margin-left:auto;margin-right:auto}", ""]);
+exports.push([module.i, ".vue-up[data-v-1fe7f8ac]{position:fixed;left:0;top:0;width:100%;height:100vh;z-index:1000000000;pointer-events:none}.vue-up.\\--show[data-v-1fe7f8ac]{opacity:1}.vue-up[data-v-1fe7f8ac]:not(.\\--show){opacity:0;transition:opacity .4s}.vue-up .message[data-v-1fe7f8ac]{color:#fff;font-family:Rubik,sans-serif;font-size:60px;position:absolute;text-align:center;top:50%;transform:translateY(-50%);left:0;right:0;margin-left:auto;margin-right:auto}", ""]);
 
 // exports
 
@@ -326,7 +326,7 @@ module.exports = function normalizeComponent (
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "notification-popup",
+    staticClass: "vue-up",
     class: {
       '--show': _vm.show
     },
@@ -352,7 +352,7 @@ var content = __webpack_require__(4);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(9)("68144c5a", content, true);
+var update = __webpack_require__(9)("3449749a", content, true);
 
 /***/ }),
 /* 9 */
