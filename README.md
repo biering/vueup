@@ -5,8 +5,6 @@ Simple, lightweight and elegant global notification popup for Vue.js.
 
 View the [demo](./demo/index.html).
 
-<div align="center"><img src="./media/vue-popup-logo.png" alt="vue-popup-logo"/></div>
-
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/made-with-vue.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
