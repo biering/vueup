@@ -4,8 +4,6 @@
 
 # Vue Popup
 
----
-
 
 Simple, lightweight and elegant global notification popup for Vue.js.
 
