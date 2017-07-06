@@ -26,9 +26,10 @@ View the [demo](./demo/index.html).
 npm install --save vue-popup
 ```
 
+Somewhere in your app:
+
 ```javascript
 import Vue from 'vue'
-// somewhere
 import VuePopup from 'vue-popup'
 
 Vue.use(VuePopup)
