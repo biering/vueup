@@ -101,7 +101,7 @@ var Component = __webpack_require__(6)(
   /* template */
   __webpack_require__(7),
   /* scopeId */
-  "data-v-0d7c8aee",
+  "data-v-7c8666e6",
   /* cssModules */
   null
 )
@@ -202,7 +202,7 @@ exports = module.exports = __webpack_require__(5)();
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700);", ""]);
 
 // module
-exports.push([module.i, ".notification-popup[data-v-0d7c8aee]{position:fixed;left:0;top:0;width:100%;height:100vh;z-index:1000000000;pointer-events:none}.notification-popup.\\--show[data-v-0d7c8aee]{opacity:1}.notification-popup[data-v-0d7c8aee]:not(.\\--show){opacity:0;transition:opacity .4s}.message[data-v-0d7c8aee]{color:#fff;font-family:Rubik,sans-serif;font-size:60px;position:absolute;text-align:center;top:50%;transform:translateY(-50%);left:0;right:0;margin-left:auto;margin-right:auto}", ""]);
+exports.push([module.i, ".notification-popup[data-v-7c8666e6]{position:fixed;left:0;top:0;width:100%;height:100vh;z-index:1000000000;pointer-events:none}.notification-popup.\\--show[data-v-7c8666e6]{opacity:1}.notification-popup[data-v-7c8666e6]:not(.\\--show){opacity:0;transition:opacity .4s}.notification-popup .message[data-v-7c8666e6]{color:#fff;font-family:Rubik,sans-serif;font-size:60px;position:absolute;text-align:center;top:50%;transform:translateY(-50%);left:0;right:0;margin-left:auto;margin-right:auto}", ""]);
 
 // exports
 
@@ -352,7 +352,7 @@ var content = __webpack_require__(4);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(9)("4861fee8", content, true);
+var update = __webpack_require__(9)("68144c5a", content, true);
 
 /***/ }),
 /* 9 */
