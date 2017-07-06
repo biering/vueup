@@ -93,4 +93,4 @@ this.$popup({
 
 ## License
 
-Copyright (c) 2017 Christoph Biering, Licensed under the MIT license.
+Copyright (c) 2017 Christoph Biering, Licensed under the [MIT license](./LICENSE).
