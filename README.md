@@ -1,6 +1,8 @@
-# Vue Popup
+
 
 <div align="center"><img src="./media/vue-popup-logo.png" alt="vue-popup-logo"/></div>
+
+# Vue Popup
 
 ---
 
