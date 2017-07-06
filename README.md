@@ -1,12 +1,19 @@
 # Vue Popup
 
+<div align="center"><img src="./media/vue-popup-logo.png" alt="vue-popup-logo"/></div>
+
+---
+
+> Simple, lightweight and elegant global notification popup for Vue.js
+
+---
+
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/made-with-vue.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
 
-<div align="center"><img src="./media/vue-popup-logo.png" alt="vue-popup-logo"/></div>
 
-> Simple, lightweight and elegant global notification popup for Vue.js
+
 
 ## Install
 
