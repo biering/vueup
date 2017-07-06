@@ -5,7 +5,9 @@
 ---
 
 
-Simple, lightweight and elegant global notification popup for Vue.js
+Simple, lightweight and elegant global notification popup for Vue.js.
+
+View the (./demo/index.html)[demo].
 
 
 ---
