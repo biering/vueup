@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="103.923094%" y1="100%" x2="-17.0209444%" y2="66.9471569%" id="linearGradient-1">
+            <stop stop-color="#020001" offset="0%"></stop>
+            <stop stop-color="#F77062" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" stroke-width="10">
+            <g id="circle" transform="translate(3.000000, 3.000000)">
+                <circle id="underlay-circle" stroke="url(#linearGradient-1)" opacity="0.0849184783" cx="29" cy="29" r="20"></circle>
+                <path d="M29,49 C40.045695,49 49,40.045695 49,29 C49,17.954305 40.045695,9 29,9 L29,9 C17.954305,9 9,17.954305 9,29" id="overlay-circle" stroke="#131314" stroke-linecap="round" transform="translate(29.000000, 29.000000) rotate(-135.000000) translate(-29.000000, -29.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

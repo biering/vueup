@@ -1,0 +1,14 @@
+Options +FollowSymLinks -MultiViews
+
+DirectoryIndex index.html
+
+RewriteEngine On
+#
+# Rewrite valid requests on .html files
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html?rw=1 [L,QSA]
+#
+# Return 404 on direct requests against .html files
+RewriteCond %{REQUEST_URI} \.html$
+RewriteCond %{QUERY_STRING} !rw=1 [NC]
+RewriteRule ^ - [R=404]

@@ -1,20 +1,24 @@
 <template>
   <main class="main">
+    <header-view></header-view>
+
     <h1>VueUp</h1>
-    <p>Simple and elegant global notification popup for Vue.js</p>
+    <p>Simple, lightweight and elegant global notification popup for Vue.js</p>
     <vue-up></vue-up>
 
-    <h2>Test some notifications</h2>
+    <h2>Demo</h2>
+
+    <div class="separator"></div>
 
     <pre class="code-wrap">
       <code>
-        this.$popup({
-          message: 'Saved'
+        this.<span class="method">$popup</span>({
+          message: <span class="string">'Saved'</span>
         })
 
-        // or
+        <span class="comment">// or</span>
 
-        this.$popup('Saved')
+        this.<span class="method">$popup</span>(<span class="string">'Saved'</span>)
       </code>
     </pre>
 
@@ -22,10 +26,10 @@
 
     <pre class="code-wrap">
       <code>
-        this.$popup({
-          message: 'NOTE ADDED',
-          backgroundColor: 'rgba(255, 255, 255, 0.8)',
-          color: '#161925'
+        this.<span class="method">$popup</span>({
+          message         : <span class="string">'NOTE ADDED'</span>,
+          backgroundColor : <span class="string">'rgba(255, 255, 255, 0.8)'</span>,
+          color           : <span class="string">'#161925'</span>
         })
       </code>
     </pre>
@@ -34,23 +38,53 @@
 
     <pre class="code-wrap">
       <code>
-        this.$popup({
-          message: "It's done!",
-          backgroundColor: 'rgba(255, 255, 255, 0.8)',
-          color: '#161925'
+        this.<span class="method">$popup</span>({
+          message         : <span class="string">"It's done!"</span>,
+          backgroundColor : <span class="string">'rgba(255, 255, 255, 0.8)'</span>,
+          color           : <span class="string">'#161925'</span>
         })
       </code>
     </pre>
 
     <button type="button" class="button" @click="trigger(3)">It's done!</button>
 
-    <footer>Released under the <a href="//github.com/deviavir/vue-bars/blob/master/LICENSE">MIT</a> license. <a href="//github.com/deviavir/vue-bars">View source.</a></footer>
+
+    <h2>Install</h2>
+
+    <div class="separator"></div>
+
+    <pre class="code-wrap">
+      <code>
+        npm install --save vueup
+      </code>
+    </pre>
+
+    Somewhere in your app:
+
+    <pre class="code-wrap">
+      <code>
+        import Vue   from <span class="string">'vue'</span>
+        import VueUp from <span class="string">'vueup'</span>
+
+        Vue.use(VueUp)
+      </code>
+    </pre>
+
+    <footer>
+      Released under the <a href="//github.com/chryb/vueup/blob/master/LICENSE">MIT</a> license.
+      <a href="//github.com/chryb/vueup">View source.</a>
+    </footer>
   </main>
 </template>
 
 <script>
+  import HeaderView from './Header.vue'
+
   export default {
     name: 'app',
+    components: {
+      HeaderView
+    },
     methods: {
       trigger (id) {
         switch (id) {
@@ -101,9 +135,8 @@
 
   h1, h2 {
     font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
     font-weight: 700;
-    color: #131314;
+    color: #333;
     margin-bottom: 30px;
     margin-top: 30px;
   }
@@ -111,13 +144,14 @@
   h1 {
     font-size: 1.625em;
     letter-spacing: 6px;
-    border-left: 3px solid #131314;
+    border-left: 3px solid #454545;
     padding-left: 20px;
+    text-transform: uppercase;
   }
 
   h2 {
-    font-size: 1.25em;
-    letter-spacing: 4px;
+    font-size: 24px;
+    letter-spacing: 1.9px
   }
 
   p {
@@ -130,26 +164,41 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     max-width: 650px;
+    padding-top: 40px;
   }
 
   .code-wrap {
     text-align: left;
     margin-top: 30px;
     margin-bottom: 30px;
-    border-left: 5px solid #000;
-    background-color: #eee;
+    border-radius: 5px;
+    background-color: #f1f1f1;
   }
 
   .code-wrap code {
     font-family: "Roboto Mono", monospace;
-    color: #131314
+    color: #454545;
+    font-size: 14px;
+  }
+
+  code .string {
+    color: #F75700;
+  }
+
+  code .method {
+    color: #9c7ec2;
+    font-weight: bold;
+  }
+
+  code .comment {
+    color: #999;
   }
 
   .button {
     background: none;
     border: none;
     color: #fff;
-    background-color: #777;
+    background-color: #ccc;
     border-radius: 3px;
     cursor: pointer;
     padding: 10px 20px;
@@ -164,12 +213,18 @@
     background-color: #111;
   }
 
+  .separator {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+
   footer {
     margin-top: 40px;
     line-height: 2;
   }
 
   a {
-    color: #42b983;
+    color: #FA8334;
   }
 </style>
