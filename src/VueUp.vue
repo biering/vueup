@@ -50,6 +50,7 @@
 </script>
 
 <style lang="css" scoped>
+  /* rausnehmen */
   @import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
 
   .vue-up {
