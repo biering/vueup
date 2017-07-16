@@ -1,0 +1,146 @@
+$main-color: #FF0F80;
+
+
+body, html {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  font-size: 16px;
+  letter-spacing: .9px;
+}
+
+h1, h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 1.625em;
+  letter-spacing: 6px;
+  border-left: 3px solid #454545;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 24px;
+  letter-spacing: 1.9px;
+  margin-top: 40px;
+}
+
+p {
+  color: #606c77;
+  font-size: 1.1em;
+  font-weight: 300;
+  letter-spacing: .01em;
+  line-height: 1.6;
+}
+
+p > code {
+  background: #f4f5f5;
+  border-radius: .4rem;
+  font-size: 86%;
+  margin: 0 .2rem;
+  padding: .2rem .5rem;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.main {
+  margin: 15vh auto 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 650px;
+  padding-top: 40px;
+}
+
+.code-wrap {
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  background-color: #000;
+
+  > code {
+    font-family: "Roboto Mono", monospace;
+    color: #fff;
+    font-size: 14px;
+    font-size: 0.9em;
+  }
+}
+
+code .string {
+  color: #F75700;
+}
+
+code .method {
+  color: $main-color;
+  font-weight: bold;
+}
+
+code .comment {
+  color: #999;
+}
+
+.button {
+  background: none;
+  border: none;
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &:hover {
+    background-color: black;
+    color: #fff;
+  }
+}
+
+.separator {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+footer {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+
+a {
+  color: $main-color;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 300;
+  letter-spacing: .01em;
+  line-height: 1.6;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -3,7 +3,19 @@
     <header-view></header-view>
 
     <h1>VueUp</h1>
-    <p>Simple, lightweight and elegant global notification popup for Vue.js</p>
+
+    <a href="https://www.npmjs.com/package/vueup">
+      https://www.npmjs.com/package/vueup
+    </a>
+
+    <p>
+      Simple, lightweight and super fast global notification popup for Vue.js.
+    </p>
+
+    <p>
+      With VueUp you can easily notify your users about certain actions and effects.
+    </p>
+
     <vue-up></vue-up>
 
     <h2>Demo</h2>
@@ -113,118 +125,6 @@
   }
 </script>
 
-<style>
-  body, html {
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-  }
-
-  * {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  body {
-    font-family: "Roboto", sans-serif;
-    background-color: #fff;
-    font-size: 16px;
-    letter-spacing: .9px;
-  }
-
-  h1, h2 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-
-  h1 {
-    font-size: 1.625em;
-    letter-spacing: 6px;
-    border-left: 3px solid #454545;
-    padding-left: 20px;
-    text-transform: uppercase;
-  }
-
-  h2 {
-    font-size: 24px;
-    letter-spacing: 1.9px
-  }
-
-  p {
-    color: #999;
-    margin-bottom: 60px;
-  }
-
-  .main {
-    margin: 15vh auto 20px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    max-width: 650px;
-    padding-top: 40px;
-  }
-
-  .code-wrap {
-    text-align: left;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    background-color: #f1f1f1;
-  }
-
-  .code-wrap code {
-    font-family: "Roboto Mono", monospace;
-    color: #454545;
-    font-size: 14px;
-  }
-
-  code .string {
-    color: #F75700;
-  }
-
-  code .method {
-    color: #9c7ec2;
-    font-weight: bold;
-  }
-
-  code .comment {
-    color: #999;
-  }
-
-  .button {
-    background: none;
-    border: none;
-    color: #fff;
-    background-color: #ccc;
-    border-radius: 3px;
-    cursor: pointer;
-    padding: 10px 20px;
-    font-size: 18px;
-    outline: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-  }
-
-  .button:hover {
-    background-color: #111;
-  }
-
-  .separator {
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.1);
-    width: 100%;
-  }
-
-  footer {
-    margin-top: 40px;
-    line-height: 2;
-  }
-
-  a {
-    color: #FA8334;
-  }
+<style lang="scss">
+  @import "./style.scss";
 </style>
