@@ -53,7 +53,7 @@ export default {
 
 #### Nuxt.js
 
-To use VueUp with Nuxt.js do the following steps:
+To use VueUp with [Nuxt.js](https://nuxtjs.org) do the following steps:
 
 File `plugins/vueup.js`:
 
