@@ -26,30 +26,6 @@ import VueUp from 'vueup'
 Vue.use(VueUp)
 ```
 
-## Usage
-
-Add the `<vue-up>` component to one point in your application:
-
-```html
-<template>
-  <div>
-    <vue-up></vue-up>
-  </div>
-</template>
-```
-
-To trigger the notification use the `$popup` method:
-
-```javascript
-export default {
-  ...
-  methods: {
-    notify () {
-      this.$popup({ message: 'A message' })
-    }
-  }
-}
-```
 
 #### Nuxt.js
 
@@ -76,6 +52,34 @@ module.exports = {
 
 **Note:** The key `ssr` is used to disable the server-side rendering for VueUp because it's a client side library.
 For more information see [nuxtjs.org/guide/plugins/](https://nuxtjs.org/guide/plugins/).
+
+I would recommend to add the VueUp element `<vue-up></vue-up>` under the `</nuxt>` element in the `layouts/default.vue` file.
+
+
+## Usage
+
+Add the `<vue-up>` component to one point in your application:
+
+```html
+<template>
+  <div>
+    <vue-up></vue-up>
+  </div>
+</template>
+```
+
+To trigger the notification use the `$popup` method:
+
+```javascript
+export default {
+  ...
+  methods: {
+    notify () {
+      this.$popup({ message: 'A message' })
+    }
+  }
+}
+```
 
 ## API
 
