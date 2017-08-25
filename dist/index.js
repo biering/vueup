@@ -170,7 +170,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 
 
-var NotificationPopup = {
+var VueUpPlugin = {
   install: function install(Vue) {
     if (this.installed) {
       return;
@@ -191,7 +191,7 @@ var NotificationPopup = {
   }
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (NotificationPopup);
+/* harmony default export */ __webpack_exports__["default"] = (VueUpPlugin);
 
 /***/ }),
 /* 4 */
