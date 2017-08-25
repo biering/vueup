@@ -4,9 +4,15 @@
 
     <h1>VueUp</h1>
 
-    <a href="https://www.npmjs.com/package/vueup">
-      https://www.npmjs.com/package/vueup
-    </a>
+    <div class="links">
+      <a href="https://www.npmjs.com/package/vueup">
+        npm
+      </a>
+      <span class="divider">|</span>
+      <a href="https://github.com/chryb/vueup">
+        github
+      </a>
+    </div>
 
     <p>
       Simple, lightweight and super fast global notification popup for Vue.js.
@@ -39,9 +45,10 @@
     <pre class="code-wrap">
       <code>
         this.<span class="method">$popup</span>({
-          message         : <span class="string">'NOTE ADDED'</span>,
-          backgroundColor : <span class="string">'rgba(255, 255, 255, 0.8)'</span>,
-          color           : <span class="string">'#161925'</span>
+          message         : <span class="string">'ADDED NOTE'</span>,
+          backgroundColor : <span class="string">'rgb(180, 214, 211)'</span>,
+          color           : <span class="string">'#161925'</span>,
+          delay           : <span class="number">5</span>
         })
       </code>
     </pre>
@@ -60,27 +67,9 @@
 
     <button type="button" class="button" @click="trigger(3)">It's done!</button>
 
-
-    <h2>Install</h2>
-
-    <div class="separator"></div>
-
-    <pre class="code-wrap">
-      <code>
-        npm install --save vueup
-      </code>
-    </pre>
-
-    Somewhere in your app:
-
-    <pre class="code-wrap">
-      <code>
-        import Vue   from <span class="string">'vue'</span>
-        import VueUp from <span class="string">'vueup'</span>
-
-        Vue.use(VueUp)
-      </code>
-    </pre>
+    <p>
+      For more information see <a href="https://github.com/chryb/vueup">VueUp on Github</a>.
+    </p>
 
     <footer>
       Released under the <a href="//github.com/chryb/vueup/blob/master/LICENSE">MIT</a> license.
@@ -108,8 +97,9 @@
           case 2:
             this.$popup({
               message: 'ADDED NOTE',
-              backgroundColor: 'rgba(255, 255, 255, 0.9)',
-              color: '#161925'
+              backgroundColor: 'rgb(180, 214, 211)',
+              color: '#161925',
+              delay: 6
             })
             break
           case 3:
@@ -126,5 +116,6 @@
 </script>
 
 <style lang="scss">
-  @import "./style.scss";
+  @import './style.scss';
+  @import './highlight.scss';
 </style>

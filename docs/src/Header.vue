@@ -6,11 +6,6 @@
           <img src="assets/logo_black.svg"/>
         </a>
       </div>
-      <div class="links">
-        <div class="item">
-          <a href="https://github.com/chryb/vueup">github</a>
-        </div>
-      </div>
     </div>
   </div>
 </template>

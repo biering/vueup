@@ -1,6 +1,5 @@
 $main-color: #FF0F80;
 
-
 body, html {
   top: 0;
   left: 0;
@@ -19,6 +18,16 @@ body {
   font-size: 16px;
   letter-spacing: .9px;
 }
+
+/* elements */
+
+.links {
+  .divider {
+    color: #999;
+    margin: 0 10px;
+  }
+}
+
 
 h1, h2 {
   font-family: "Roboto", sans-serif;
@@ -66,34 +75,6 @@ p > code {
   -moz-osx-font-smoothing: grayscale;
   max-width: 650px;
   padding-top: 40px;
-}
-
-.code-wrap {
-  text-align: left;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-radius: 6px;
-  background-color: #000;
-
-  > code {
-    font-family: "Roboto Mono", monospace;
-    color: #fff;
-    font-size: 14px;
-    font-size: 0.9em;
-  }
-}
-
-code .string {
-  color: #F75700;
-}
-
-code .method {
-  color: $main-color;
-  font-weight: bold;
-}
-
-code .comment {
-  color: #999;
 }
 
 .button {
