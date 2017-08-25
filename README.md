@@ -107,6 +107,8 @@ this.$popup({
 |backgroundColor|string|rgba(0, 0, 0, 0.8)|The background color of the notification|
 |delay|float|3.5|How long (in seconds, e.q. 3.5 seconds) should the notification popup be displayed|
 
+**Hint:** For the `color` and `backgroundColor` fields you can apply the color property in form of the css color property.
+
 ## License
 
 Copyright (c) 2017 Christoph Biering, Licensed under the [MIT license](./LICENSE).
