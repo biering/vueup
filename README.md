@@ -51,6 +51,32 @@ export default {
 }
 ```
 
+#### Nuxt.js
+
+To use VueUp with Nuxt.js do the following steps:
+
+File `plugins/vueup.js`:
+
+```javascript
+import Vue from 'vue'
+import VueUp from 'vueup'
+
+Vue.use(VueUp)
+```
+
+Then, add the file inside the plugins key of `nuxt.config.js`:
+
+```javascript
+module.exports = {
+  plugins: [
+    { src: '~/plugins/vueup', ssr: false }
+  ]
+}
+```
+
+**Note:** The key `ssr` is used to disable the server-side rendering for VueUp because it's a client side library.
+For more information see [nuxtjs.org/guide/plugins/](https://nuxtjs.org/guide/plugins/).
+
 ## API
 
 ```javascript

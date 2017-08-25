@@ -1,7 +1,7 @@
 import VueUp      from './VueUp.vue'
 import { events } from './events'
 
-const NotificationPopup = {
+const VueUpPlugin = {
   install(Vue) {
     if (this.installed) {
       return
@@ -22,4 +22,4 @@ const NotificationPopup = {
   }
 }
 
-export default NotificationPopup
+export default VueUpPlugin
