@@ -3,7 +3,7 @@
 
 Simple, lightweight and elegant global notification popup for Vue.js.
 
-View the [demo](http://chryb.me/blog/#/p/post-1-2017-07-10).
+View the [demo](https://chryb.github.io/vueup).
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/made-with-vue.svg)](http://forthebadge.com)
