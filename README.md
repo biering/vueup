@@ -1,6 +1,5 @@
 # VueUp
 
-
 Simple, lightweight and elegant global notification popup for Vue.js.
 
 View the [demo](https://chryb.github.io/vueup).
@@ -29,7 +28,9 @@ Vue.use(VueUp)
 
 #### Nuxt.js
 
-To use VueUp with [Nuxt.js](https://nuxtjs.org) do the following steps:
+To use VueUp with [Nuxt.js](https://nuxtjs.org) deploy the app with the `--spa` or `--s` flag to disable server-side rendering. For more information see [nuxtjs.org/guide/commands/](https://nuxtjs.org/guide/commands/).
+
+Otherwise, you can do the following steps:
 
 File `plugins/vueup.js`:
 
