@@ -38,7 +38,7 @@
         this.backgroundColor = payload.hasOwnProperty('backgroundColor')
           ? payload.backgroundColor : 'rgba(0, 0, 0, 0.8)'
 
-        delay *= 100
+        delay *= 1000
 
         this.show = true
         setTimeout(() => {
