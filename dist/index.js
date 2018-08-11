@@ -127,7 +127,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     return {
       show: false,
       backgroundColor: 'rgba(0, 0, 0, 0.8)',
-      color: '#ffffff'
+      color: '#ffffff',
+      fontSize: '60'
     };
   },
   mounted: function mounted() {
@@ -146,7 +147,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       _this.backgroundColor = payload.hasOwnProperty('backgroundColor') ? payload.backgroundColor : 'rgba(0, 0, 0, 0.8)';
 
-      delay *= 100;
+      _this.fontSize = payload.hasOwnProperty('fontSize') ? payload.fontSize : '60';
+
+      delay *= 1000;
 
       _this.show = true;
       setTimeout(function () {
@@ -202,7 +205,7 @@ exports = module.exports = __webpack_require__(5)();
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700);", ""]);
 
 // module
-exports.push([module.i, ".vue-up[data-v-1fe7f8ac]{position:fixed;left:0;top:0;width:100%;height:100vh;z-index:1000000000;pointer-events:none}.vue-up.\\--show[data-v-1fe7f8ac]{opacity:1}.vue-up[data-v-1fe7f8ac]:not(.\\--show){opacity:0;transition:opacity .4s}.vue-up .message[data-v-1fe7f8ac]{color:#fff;font-family:Rubik,sans-serif;font-size:60px;position:absolute;text-align:center;top:50%;transform:translateY(-50%);left:0;right:0;margin-left:auto;margin-right:auto}", ""]);
+exports.push([module.i, ".vue-up[data-v-1fe7f8ac]{position:fixed;left:0;top:0;width:100%;height:100vh;z-index:1000000000;pointer-events:none}.vue-up.\\--show[data-v-1fe7f8ac]{opacity:1}.vue-up[data-v-1fe7f8ac]:not(.\\--show){opacity:0;transition:opacity .4s}.vue-up .message[data-v-1fe7f8ac]{color:#fff;font-family:Rubik,sans-serif;position:absolute;text-align:center;top:50%;transform:translateY(-50%);left:0;right:0;margin-left:auto;margin-right:auto}", ""]);
 
 // exports
 
@@ -331,7 +334,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       '--show': _vm.show
     },
     style: ({
-      backgroundColor: _vm.backgroundColor
+      backgroundColor: _vm.backgroundColor,
+      fontSize: _vm.fontSize + 'px'
     })
   }, [_c('div', {
     staticClass: "message",

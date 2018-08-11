@@ -1,5 +1,5 @@
 <template>
-  <div class="vue-up" :class="{ '--show': show }" :style="{ backgroundColor: backgroundColor }">
+  <div class="vue-up" :class="{ '--show': show }" :style="{ backgroundColor: backgroundColor, fontSize: fontSize + 'px' }">
     <div class="message" :style="{ color: color }">
       {{ message }}
     </div>
@@ -17,7 +17,8 @@
       return {
         show            : false,
         backgroundColor : 'rgba(0, 0, 0, 0.8)',
-        color           : '#ffffff'
+        color           : '#ffffff',
+        fontSize        : '60'
       }
     },
 
@@ -37,6 +38,9 @@
 
         this.backgroundColor = payload.hasOwnProperty('backgroundColor')
           ? payload.backgroundColor : 'rgba(0, 0, 0, 0.8)'
+
+        this.fontSize = payload.hasOwnProperty('fontSize')
+          ? payload.fontSize : '60'
 
         delay *= 1000
 
@@ -75,7 +79,6 @@
   .vue-up .message {
     color: #fff;
     font-family: 'Rubik', sans-serif;
-    font-size: 60px;
     position: absolute;
     text-align: center;
     top: 50%;
