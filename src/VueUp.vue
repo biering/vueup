@@ -1,6 +1,6 @@
 <template>
-  <div class="vue-up" :class="{ '--show': show }" :style="{ backgroundColor: backgroundColor, fontSize: fontSize + 'px' }">
-    <div class="message" :style="{ color: color }">
+  <div class="vue-up" :class="{ '--show': show }" :style="{ backgroundColor: backgroundColor }">
+    <div class="message" :style="{ color: color, fontSize: fontSize + 'px' }">
       {{ message }}
     </div>
   </div>
