@@ -18,6 +18,10 @@ const VueUpPlugin = {
       if (typeof params === 'object') {
         events.$emit('TRIGGER', params)
       }
+      
+      return new Promise((resolve,reject) => {
+        resolve({status:true})
+      })
     }
   }
 }

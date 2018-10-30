@@ -82,6 +82,21 @@ export default {
 }
 ```
 
+And with a promise you could do an action after notification is done
+
+```javascript
+export default {
+  ...
+  methods: {
+    notify () {
+      this.$popup({ message: 'Your request is reviewed.' }).then(() => {
+        this.$router.push("/statusboard")
+      })
+    }
+  }
+}
+```
+
 ## API
 
 ```javascript
