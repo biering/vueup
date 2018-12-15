@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'index.js',
+    filename: 'vueup.js',
     library:'vue-notification',
     libraryTarget: 'umd'
   },
