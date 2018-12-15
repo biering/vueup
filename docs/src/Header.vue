@@ -17,7 +17,6 @@
 </script>
 
 <style lang="css" scoped>
-
   .header {
     width: 100%;
     position: absolute;
@@ -47,10 +46,6 @@
     margin-top: -42px;
   }
 
-  .header .wrap .links .item {
-
-  }
-
   .header .wrap .links .item a {
     text-decoration: none;
     color: #999;
@@ -59,5 +54,4 @@
   .header .wrap .links .item a:hover {
     color: #131314;
   }
-
 </style>
