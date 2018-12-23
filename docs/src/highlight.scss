@@ -3,7 +3,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 6px;
-  background-color: #444;
+  background-color: #283237;
 
   > code {
     font-family: "Roboto Mono", monospace;
@@ -13,19 +13,23 @@
   }
 }
 
+code .this {
+  color: #8cb5fd;
+}
+
 code .string {
-  color: #F58F29;
+  color: #db786b;
 }
 
 code .method {
-  color: #EC368D;
+  color: #74a08f;
   font-weight: bold;
 }
 
 code .comment {
-  color: #999;
+  color: #566a75;
 }
 
-code .number {
-  color: #51E5FF;
+code .num {
+  color: #c199e7;
 }
