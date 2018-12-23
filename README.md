@@ -110,7 +110,8 @@ this.$popup({
     message         : 'message',
     color           : '#423452',
     backgroundColor : 'rgba(0, 0, 0, 0.4)',
-    delay           : 4
+    delay           : 4,
+    fontSize        : 60
 })
 ```
 
@@ -122,6 +123,7 @@ this.$popup({
 |color|string|#ffffff|The text color of the message|
 |backgroundColor|string|rgba(0, 0, 0, 0.8)|The background color of the notification|
 |delay|float|3.5|How long (in seconds, e.q. 3.5 seconds) should the notification popup be displayed|
+|fontSize|int|60|The font size of the notification text|
 
 **Hint:** For the `color` and `backgroundColor` fields you can apply the color property in form of the css color property.
 

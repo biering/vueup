@@ -43,6 +43,7 @@ h1 {
   border-left: 3px solid #454545;
   padding-left: 20px;
   text-transform: uppercase;
+  margin-bottom: 50px !important;
 }
 
 h2 {
@@ -69,15 +70,20 @@ p > code {
   font-weight: bold;
 }
 
-.main {
+.container {
   margin: 15vh auto 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 650px;
-  padding-top: 40px;
+  max-width: 760px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.button {
+.content {
+  margin-top: 100px;
+}
+
+.btn {
   background: none;
   border: none;
   color: black;
