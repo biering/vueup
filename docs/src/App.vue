@@ -35,13 +35,13 @@
 
       <pre class="code-wrap">
         <code>
-          <span class="this">this</span>.<span class="method">$popup</span>({
+          <span class="keyword">this</span>.<span class="method">$popup</span>({
             message: <span class="string">'Saved'</span>
           })
 
           <span class="comment">// or</span>
 
-          this.<span class="method">$popup</span>(<span class="string">'Saved'</span>)
+          <span class="keyword">this</span>.<span class="method">$popup</span>(<span class="string">'Saved'</span>)
         </code>
       </pre>
 
@@ -49,7 +49,7 @@
 
       <pre class="code-wrap">
         <code>
-          <span class="this">this</span>.<span class="method">$popup</span>({
+          <span class="keyword">this</span>.<span class="method">$popup</span>({
             message         : <span class="string">'ADDED NOTE'</span>,
             backgroundColor : <span class="string">'rgb(180, 214, 211)'</span>,
             color           : <span class="string">'#161925'</span>,
@@ -61,12 +61,19 @@
 
       <button type="button" class="btn" @click="trigger(2)">Save Note</button>
 
+      <p>
+        You can also use a promise to execute something after VueUp has ended.
+      </p>
+
       <pre class="code-wrap">
         <code>
-          <span class="this">this</span>.<span class="method">$popup</span>({
+          <span class="keyword">this</span>.<span class="method">$popup</span>({
             message         : <span class="string">"It's done!"</span>,
             backgroundColor : <span class="string">'rgba(255, 255, 255, 0.8)'</span>,
             color           : <span class="string">'#161925'</span>
+          })
+          .<span class="method">then</span>(() => {
+            <span class="keyword">console</span>.<span class="method">log</span>(<span class="string">'finished'</span>)
           })
         </code>
       </pre>
@@ -116,6 +123,9 @@
               message: "It's done!",
               backgroundColor: 'rgba(225, 206, 122, 0.9)',
               color: '#ffffff'
+            })
+            .then(() => {
+              console.log('finished')
             })
             break
         }

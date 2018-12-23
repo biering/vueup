@@ -24,11 +24,12 @@ const VueUpPlugin = {
       if (typeof params === 'object') {
         events.$emit('TRIGGER', params)
       }
-      
+
       //Resolve a promise with same delay as specified in params.delay
-      return delayResolve(delay*1000).then(() => {
-      
-      })
+      return delayResolve(delay * 1000)
+        .then(() => {
+
+        })
     }
 
     return instance
