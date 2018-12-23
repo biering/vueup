@@ -64,9 +64,6 @@
 </script>
 
 <style lang="css" scoped>
-  /* rausnehmen */
-  @import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
-
   .vue-up {
     position: fixed;
     left: 0;
@@ -88,7 +85,7 @@
 
   .vue-up .text {
     color: #fff;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Arial', sans-serif;
     position: absolute;
     text-align: center;
     top: 50%;
