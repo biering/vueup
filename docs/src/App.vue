@@ -116,6 +116,7 @@
 </script>
 
 <style lang="scss">
+  @import 'plugin-css';
   @import './style.scss';
   @import './highlight.scss';
 </style>
