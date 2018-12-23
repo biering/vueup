@@ -82,6 +82,22 @@ export default {
 }
 ```
 
+You can also use a promise to execute something after the VueUp notification has ended:
+
+```javascript
+export default {
+  ...
+  methods: {
+    notify () {
+      this.$popup({ message: 'Your request is reviewed.' })
+        .then(() => {
+          // ... do something
+        })
+    }
+  }
+}
+```
+
 ## API
 
 ```javascript
