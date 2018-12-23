@@ -82,16 +82,17 @@ export default {
 }
 ```
 
-And with a promise you could do an action after notification is done
+You can also use a promise to execute something after the VueUp notification has ended:
 
 ```javascript
 export default {
   ...
   methods: {
     notify () {
-      this.$popup({ message: 'Your request is reviewed.' }).then(() => {
-        this.$router.push("/statusboard")
-      })
+      this.$popup({ message: 'Your request is reviewed.' })
+        .then(() => {
+          // ... do something
+        })
     }
   }
 }
