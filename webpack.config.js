@@ -5,8 +5,11 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+
 module.exports = {
+
   entry: './src/index.js',
+
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
@@ -14,6 +17,7 @@ module.exports = {
     library:'vue-notification',
     libraryTarget: 'umd'
   },
+
   module: {
     rules: [
       {
@@ -47,14 +51,17 @@ module.exports = {
       }
     ]
   },
+
   externals: {
     vue: 'vue'
   },
+
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
     }
   },
+
   optimization: {
     minimizer: [
       new UglifyJsPlugin({
@@ -70,14 +77,18 @@ module.exports = {
       new OptimizeCSSAssetsPlugin({})
     ]
   },
+
   devServer: {
     historyApiFallback: true,
     noInfo: true
   },
+
   performance: {
     hints: false
   },
+
   devtool: '#source-map',
+
   plugins: [
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
