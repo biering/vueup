@@ -7,6 +7,7 @@
     "build": "rm -r dist && cross-env NODE_ENV=production webpack --mode production --progress --hide-modules"
   },
   "dependencies": {
+    "bulma": "^0.7.2",
     "vue": "^2.5.21"
   },
   "devDependencies": {

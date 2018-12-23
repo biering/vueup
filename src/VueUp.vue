@@ -1,8 +1,18 @@
 <template>
-  <div class="vue-up" :class="{ '--show': show }" :style="{ backgroundColor: backgroundColor }">
-    <div class="message" :style="{ color: color, fontSize: fontSize + 'px' }">
+  <div
+    class="vue-up"
+    :class="{ '--show': show }"
+    :style="{ backgroundColor: backgroundColor }">
+
+    <div
+      class="text"
+      :style="{
+        color: color,
+        fontSize: fontSize + 'px'
+      }">
       {{ message }}
     </div>
+
   </div>
 </template>
 
@@ -76,7 +86,7 @@
     transition: opacity .4s;
   }
 
-  .vue-up .message {
+  .vue-up .text {
     color: #fff;
     font-family: 'Rubik', sans-serif;
     position: absolute;
