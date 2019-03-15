@@ -13,7 +13,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'vueup.js',
+    filename: 'index.js',
     library:'vue-notification',
     libraryTarget: 'umd'
   },
@@ -33,8 +33,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          devMode ? 'vue-style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader'
+          'vue-style-loader','css-loader'
         ]
       },
       {
