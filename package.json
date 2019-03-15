@@ -1,7 +1,7 @@
 {
   "name": "vueup",
   "description": "Simple, lightweight and elegant global notification popup for Vue.js",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "author": "Christoph Biering <chryb.q@gmail.com> (https://github.com/chryb)",
   "private": false,
   "license": "MIT",
