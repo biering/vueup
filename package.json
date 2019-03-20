@@ -1,7 +1,7 @@
 {
   "name": "vueup",
   "description": "Simple, lightweight and elegant global notification popup for Vue.js",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "author": "Christoph Biering <chryb.q@gmail.com> (https://github.com/chryb)",
   "private": false,
   "license": "MIT",
@@ -23,22 +23,22 @@
     "build": "cross-env NODE_ENV=production webpack --mode production --progress --hide-modules"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.0",
-    "@babel/preset-env": "^7.2.0",
-    "@babel/types": "^7.2.0",
-    "babel-loader": "^8.0.4",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.1",
+    "@babel/types": "^7.4.0",
+    "babel-loader": "^8.0.5",
     "cross-env": "^5.2.0",
-    "css-loader": "^2.0.1",
-    "file-loader": "^2.0.0",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "sass-loader": "^7.1.0",
-    "uglifyjs-webpack-plugin": "^2.0.1",
-    "vue": "^2.5.21",
-    "vue-loader": "^15.4.2",
-    "vue-template-compiler": "^2.5.21",
-    "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2"
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   }
 }
