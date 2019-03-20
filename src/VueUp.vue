@@ -1,8 +1,18 @@
 <template>
-  <div class="vue-up" :class="{ '--show': show }" :style="{ backgroundColor: backgroundColor }">
-    <div class="message" :style="{ color: color }">
+  <div
+    class="vue-up"
+    :class="{ '--show': show }"
+    :style="{ backgroundColor: backgroundColor }">
+
+    <div
+      class="text"
+      :style="{
+        color: color,
+        fontSize: fontSize + 'px'
+      }">
       {{ message }}
     </div>
+
   </div>
 </template>
 
@@ -17,7 +27,8 @@
       return {
         show            : false,
         backgroundColor : 'rgba(0, 0, 0, 0.8)',
-        color           : '#ffffff'
+        color           : '#ffffff',
+        fontSize        : '60'
       }
     },
 
@@ -38,6 +49,9 @@
         this.backgroundColor = payload.hasOwnProperty('backgroundColor')
           ? payload.backgroundColor : 'rgba(0, 0, 0, 0.8)'
 
+        this.fontSize = payload.hasOwnProperty('fontSize')
+          ? payload.fontSize : '60'
+
         delay *= 1000
 
         this.show = true
@@ -50,9 +64,6 @@
 </script>
 
 <style lang="css" scoped>
-  /* rausnehmen */
-  @import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
-
   .vue-up {
     position: fixed;
     left: 0;
@@ -72,10 +83,9 @@
     transition: opacity .4s;
   }
 
-  .vue-up .message {
+  .vue-up .text {
     color: #fff;
-    font-family: 'Rubik', sans-serif;
-    font-size: 60px;
+    font-family: 'Arial', sans-serif;
     position: absolute;
     text-align: center;
     top: 50%;

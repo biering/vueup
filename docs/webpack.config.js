@@ -7,12 +7,15 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
+
   entry: './src/main.js',
+
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
     filename: 'build.js'
   },
+
   module: {
     rules: [
       {
@@ -54,13 +57,15 @@ module.exports = {
       }
     ]
   },
+
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      'plugin': path.resolve(__dirname, "../dist/vueup.js"),
+      'plugin': path.resolve(__dirname, "../dist/index.js"),
       'plugin-css': path.resolve(__dirname, '../dist/vueup.css')
     }
   },
+
   optimization: {
     minimizer: [
       new UglifyJsPlugin({
@@ -76,20 +81,24 @@ module.exports = {
       new OptimizeCSSAssetsPlugin({})
     ]
   },
+
   plugins: [
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
       filename: 'app.css',
       disable: process.env.NODE_ENV === 'development'
     })
-],
+  ],
+
   devServer: {
     historyApiFallback: true,
     noInfo: true
   },
+
   performance: {
     hints: false
   },
+
   devtool: '#eval-source-map'
 }
 
