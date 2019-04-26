@@ -61,7 +61,7 @@ module.exports = {
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      'plugin': path.resolve(__dirname, "../dist/vueup.js"),
+      'plugin': path.resolve(__dirname, "../dist/index.js"),
       'plugin-css': path.resolve(__dirname, '../dist/vueup.css')
     }
   },
