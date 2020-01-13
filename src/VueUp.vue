@@ -1,7 +1,7 @@
 <template>
   <div
     class="vue-up"
-    :class="{ '--show': show }"
+    :class="{ 'show_el': show }"
     :style="{ backgroundColor: backgroundColor }">
 
     <div
@@ -74,11 +74,11 @@
     pointer-events: none;
   }
 
-  .vue-up.--show {
+  .vue-up.show_el {
     opacity: 1;
   }
 
-  .vue-up:not(.--show) {
+  .vue-up:not(.show_el) {
     opacity: 0;
     transition: opacity .4s;
   }
